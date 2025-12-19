@@ -1,16 +1,32 @@
-# React + Vite
+# Voice-to-Text Desktop Application (Tauri + Deepgram)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cross-platform desktop application that converts voice input into text using **Tauri** and **Deepgram Speech-to-Text API**.  
+This project is a functional prototype inspired by **Wispr Flow**, focusing on the **core voice-to-text workflow** rather than visual polish.
 
-Currently, two official plugins are available:
+The goal of this project is to demonstrate practical skills in building AI-powered desktop applications using modern tools.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Push-to-talk voice recording
+- Microphone permission handling
+- Audio capture from system microphone
+- Speech-to-text transcription using Deepgram
+- Display of transcribed text
+- Clear start/stop recording controls
+- Basic error handling for API and permission failures
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- **Tauri** – Cross-platform desktop framework
+- **React + Vite** – Frontend user interface
+- **Deepgram API** – Speech-to-text transcription
+- **Rust** – Backend runtime used by Tauri
+
+---
+
+## Project Structure
+
