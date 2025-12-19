@@ -136,7 +136,7 @@ npm run tauri dev
 Demo video link: (https://drive.google.com/file/d/1nzQEGjmTd3x7S9z0CMNpUtnpC8z4PQM_/view?usp=drive_link)
 
 ---
-
+ 
 ## Evaluation Notes
 
 ### This project prioritizes:
