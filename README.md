@@ -62,7 +62,7 @@ Install Tauri CLI:
 ```bash
 npm install -D @tauri-apps/cli
 ```
-
+ 
 ---
 
 ## **Install Dependencies**
