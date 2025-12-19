@@ -62,6 +62,7 @@ Install Tauri CLI:
 ```bash
 npm install -D @tauri-apps/cli
 ```
+
 ---
 
 ## **Install Dependencies**
@@ -69,6 +70,7 @@ npm install -D @tauri-apps/cli
 ```bash
 npm install
 ```
+---
 
 ## Configuration
 
@@ -86,6 +88,7 @@ touch .env
 VITE_DEEPGRAM_API_KEY=your_deepgram_api_key_here
 ```
 
+---
 
 ## Run the Application (Development)
 
@@ -101,6 +104,7 @@ npm run tauri dev
 4. Release the button to stop recording.
 5. View the transcribed text displayed in the app.
 
+---
 
 ## Architecture & Design Decisions
 
@@ -116,6 +120,7 @@ npm run tauri dev
 - **Design Focus:**
   - Prioritized core functionality and workflow over UI polish.
 
+---
 
 ## Known Limitations
 
@@ -124,4 +129,30 @@ npm run tauri dev
 - Minimal UI styling.
 - No advanced noise cancellation or audio preprocessing.
 
+---
 
+## Demo Video
+
+Demo video link: (https://drive.google.com/file/d/1nzQEGjmTd3x7S9z0CMNpUtnpC8z4PQM_/view?usp=drive_link)
+
+---
+
+## Evaluation Notes
+
+### This project prioritizes:
+
+- Functionality over visual polish
+
+- Clean and maintainable code
+
+- Clear user workflow
+
+- Practical AI integration
+  
+
+The implementation demonstrates problem-solving ability, product thinking, and real-world desktop application development using modern tools.
+
+---
+
+## Author
+Kavyashri Hebbar
