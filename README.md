@@ -30,19 +30,21 @@ The goal of this project is to demonstrate practical skills in building AI-power
 
 ## Project Structure
 
+```text
 voice-to-text-tauri/
 ├── src/
-│ ├── hooks/
-│ │ └── useAudioRecorder.js # Audio capture logic
-│ ├── services/
-│ │ └── deepgram.js # Deepgram API integration
-│ ├── App.jsx # Main UI and workflow
-│ └── main.jsx # Application entry point
+│   ├── hooks/
+│   │   └── useAudioRecorder.js   # Audio capture logic
+│   ├── services/
+│   │   └── deepgram.js           # Deepgram API integration
+│   ├── App.jsx                   # Main UI and workflow
+│   └── main.jsx                  # Application entry point
 ├── src-tauri/
-│ └── tauri.conf.json
+│   └── tauri.conf.json
 ├── public/
 ├── package.json
 └── README.md
+
 
 
 ---
@@ -59,3 +61,60 @@ Install Tauri CLI:
 
 ```bash
 npm install -D @tauri-apps/cli
+
+## Install Dependencies
+
+```bash
+npm install
+
+## Configuration
+
+To use the Deepgram API, you need to provide your API key.
+
+1. Create a `.env` file in the root directory of the project:
+
+```bash
+touch .env
+
+2. Add your Deepgram API key to the .env file:
+
+VITE_DEEPGRAM_API_KEY=your_deepgram_api_key_here
+
+
+## Run the Application (Development)
+
+```bash
+npm run tauri dev
+
+## Usage
+
+1. Launch the desktop application.
+2. Click and hold the **Push-to-Talk** button.
+3. Speak into your microphone.
+4. Release the button to stop recording.
+5. View the transcribed text displayed in the app.
+
+
+## Architecture & Design Decisions
+
+- **Separation of Concerns:**
+  - UI logic is handled in React components.
+  - Audio recording logic is isolated in a custom hook.
+  - Transcription logic is separated into a service layer.
+
+- **Technology Choices:**
+  - `MediaRecorder` API is used for microphone audio capture.
+  - Deepgram REST API is used for transcription to keep the implementation simple and reliable.
+
+- **Design Focus:**
+  - Prioritized core functionality and workflow over UI polish.
+
+
+## Known Limitations
+
+- Transcription is near real-time, not true live streaming.
+- Deepgram API key is exposed on the client side (acceptable for demo purposes only).
+- Minimal UI styling.
+- No advanced noise cancellation or audio preprocessing.
+
+
