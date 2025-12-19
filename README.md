@@ -40,16 +40,16 @@ voice-to-text-tauri/
 │   ├── App.jsx                   # Main UI and workflow
 │   └── main.jsx                  # Application entry point
 ├── src-tauri/
-│   └── tauri.conf.json
+│   └── tauri.conf.json           # Tauri configuration
 ├── public/
 ├── package.json
 └── README.md
-
-
+```
 
 ---
 
-## Setup Instructions
+
+## **Setup Instructions**
 
 ### Prerequisites
 
@@ -61,11 +61,14 @@ Install Tauri CLI:
 
 ```bash
 npm install -D @tauri-apps/cli
+```
+---
 
-## Install Dependencies
+## **Install Dependencies**
 
 ```bash
 npm install
+```
 
 ## Configuration
 
@@ -75,16 +78,20 @@ To use the Deepgram API, you need to provide your API key.
 
 ```bash
 touch .env
+```
 
 2. Add your Deepgram API key to the .env file:
 
+```bash
 VITE_DEEPGRAM_API_KEY=your_deepgram_api_key_here
+```
 
 
 ## Run the Application (Development)
 
 ```bash
 npm run tauri dev
+```
 
 ## Usage
 
